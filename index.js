@@ -53,7 +53,7 @@ module.exports = function(application='tarnation'){
       fs.writeFileSync(metaPath, JSON.stringify({expiration, url}, null, '  '));
       fs.writeFileSync(dataPath, data);
       //console.log(`CACHE of ${url} will expire on ${expiration}`)
-      console.log({ basePath, dataPath, metaPath })
+      // console.log({ basePath, dataPath, metaPath })
   };
 
     function get(url){
