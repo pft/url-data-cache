@@ -1,5 +1,5 @@
 {
-  "name": "url-cache",
+  "name": "url-data-cache",
   "version": "1.1.0",
   "description": "Cache data from a url request.",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fantasyui-com/url-cache.git"
+    "url": "git+https://github.com/fantasyui-com/url-data-cache.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fantasyui-com/url-cache/issues"
+    "url": "https://github.com/fantasyui-com/url-data-cache/issues"
   },
-  "homepage": "https://github.com/fantasyui-com/url-cache#readme",
+  "homepage": "https://github.com/fantasyui-com/url-data-cache#readme",
   "dependencies": {
     "os-paths": "^3.0.2",
     "rimraf": "^2.6.3",
