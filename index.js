@@ -52,7 +52,7 @@ module.exports = function(application='tarnation'){
       fs.mkdirSync(basePath, {recursive:true});
       fs.writeFileSync(metaPath, JSON.stringify({expiration, url}, null, '  '));
       fs.writeFileSync(dataPath, data);
-      console.log(`CACHE of ${url} will expire on ${expiration}`)
+      //console.log(`CACHE of ${url} will expire on ${expiration}`)
       console.log({ basePath, dataPath, metaPath })
   };
 
@@ -67,8 +67,10 @@ module.exports = function(application='tarnation'){
       let dateOfExpiration = new Date(expiration);
       let expired = (currentDate > dateOfExpiration);
       if(!expired){
+        //console.log(`WAS IN CACHE! ${url} will expire on ${expiration}`)
         return data;
       }else{
+        //console.log(`WAS EXPIRED ${url} expired on ${expiration}`)
         rimraf.sync(basePath);
         return null;
       }
