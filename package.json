@@ -1,0 +1,25 @@
+{
+  "name": "url-cache",
+  "version": "1.0.0",
+  "description": "Cache data from a url request.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyui-com/url-cache.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasyui-com/url-cache/issues"
+  },
+  "homepage": "https://github.com/fantasyui-com/url-cache#readme",
+  "dependencies": {
+    "os-paths": "^3.0.2",
+    "rimraf": "^2.6.3",
+    "shasum": "^1.0.2"
+  }
+}
