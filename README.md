@@ -3,12 +3,22 @@ Cache data from a url request.
 
 ```JavaScript
 
+  import urlCacheInstance from 'url-data-cache';
+  const urlDataCache = urlCacheInstance('my-app');
+
+  // or
+
+  const urlDataCache = require('url-data-cache')('my-app');
+
+  // then
+
+
   // get from cache (also delete expired)
-  const cachedData = downloadHtmlCache.get(url);
+  const cachedData = urlDataCache.get(url);
   if(cachedData) return resolve(cachedData);
 
   // put to cache
-  downloadHtmlCache.put(url, htmlData, '1 hour');
+  urlDataCache.put(url, htmlData, '1 hour');
 
 ```
 
