@@ -62,7 +62,7 @@ module.exports = function(application='tarnation'){
         return null;
       }
       const {expiration} = JSON.parse( fs.readFileSync(metaPath) );
-      const data = fs.readFileSync(dataPath);
+      const data = fs.readFileSync(dataPath).toString();
       let currentDate = new Date();
       let dateOfExpiration = new Date(expiration);
       let expired = (currentDate > dateOfExpiration);
