@@ -40,7 +40,7 @@ module.exports = function(application='tarnation'){
       }else if(timeUnit.startsWith('month')){
         expirationDate.setMonth(expirationDate.getMonth() + timeValue);
       }else if(timeUnit.startsWith('year')){
-        expirationDate.setMonth((expirationDate.getMonth() + timeValue)*12);
+        expirationDate.setMonth(expirationDate.getMonth() + (timeValue*12));
       }else{
         throw new Error('Unknown timeUnit use in cache duration, use second, minute, hour, or month')
       }
@@ -79,7 +79,8 @@ module.exports = function(application='tarnation'){
     };
 
   return {
-    put, get
+    put, get,
+    calculateExpiration
   }
 
 }
