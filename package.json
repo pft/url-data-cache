@@ -1,6 +1,6 @@
 {
   "name": "url-data-cache",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "Cache data from a url request.",
   "main": "index.js",
   "scripts": {
