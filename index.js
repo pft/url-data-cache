@@ -78,9 +78,28 @@ module.exports = function(application='tarnation'){
       }
     };
 
+  function has(url) {
+    const { dataPath, metaPath } = calculateLocations(url);
+    if (!fs.existsSync(dataPath)) {
+      return false;
+    }
+    const { expiration } = JSON.parse(fs.readFileSync(metaPath));
+    let currentDate = new Date();
+    let dateOfExpiration = new Date(expiration);
+    let expired = currentDate > dateOfExpiration;
+    if (!expired) {
+      //console.log(`WAS IN CACHE! ${url} will expire on ${expiration}`)
+      return true;
+    } else {
+      //console.log(`WAS EXPIRED ${url} expired on ${expiration}`)
+      return false;
+    }
+  }
+
   return {
-    put, get,
-    calculateExpiration
+    put, get, has,
+    calculateExpiration,
+    calculateLocations
   }
 
 }
