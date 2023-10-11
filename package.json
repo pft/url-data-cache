@@ -1,5 +1,5 @@
 {
-  "name": "url-data-cache",
+  "name": "url-data-cache-async",
   "version": "1.22.0",
   "description": "Cache data from a url request.",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fantasyui-com/url-data-cache.git"
+    "url": "git+https://github.com/pft/url-data-cache-async.git"
   },
   "keywords": [],
-  "author": "fantasyui.com <fantasyui.com@gmail.com>",
+  "author": "Niels Giesen <niels.giesen@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fantasyui-com/url-data-cache/issues"
+    "url": "https://github.com/pft/url-data-cache-async/issues"
   },
-  "homepage": "https://github.com/fantasyui-com/url-data-cache#readme",
+  "homepage": "https://github.com/pft/url-data-cache-async#readme",
   "dependencies": {
     "os-paths": "^3.0.2",
     "rimraf": "^2.6.3",
